@@ -6,8 +6,11 @@ desired_cap = {
   "platformName": "Android",
   "appium:deviceName": "RFCX50S71RH",
   "appium:automationName": "UiAutomator2",
+  "autoGrantPermissions": True,
   "appPackage": "com.google.android.youtube",
-  "appActivity": "com.google.android.youtube.app.honeycomb.Shell$HomeActivity"
+  "appActivity": "com.google.android.youtube.app.honeycomb.Shell$HomeActivity",
+  "noReset": True,
+
 }
 
 options = UiAutomator2Options().load_capabilities(desired_cap)
